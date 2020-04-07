@@ -1,5 +1,5 @@
 package com.thinksmallgroup.vineetpetclinic.model;
 
-public class Owner {
+public class Owner extends Person{
 
 }
