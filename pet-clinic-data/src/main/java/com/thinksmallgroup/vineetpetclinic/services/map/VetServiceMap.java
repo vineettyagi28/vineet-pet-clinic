@@ -1,12 +1,12 @@
 package com.thinksmallgroup.vineetpetclinic.services.map;
 
 import com.thinksmallgroup.vineetpetclinic.model.Vet;
-import com.thinksmallgroup.vineetpetclinic.services.CrudService;
+import com.thinksmallgroup.vineetpetclinic.services.VetService;
 
 import java.util.Set;
 
 public class VetServiceMap extends AbstractMapService<Vet, Long>
-        implements CrudService<Vet, Long> {
+        implements VetService {
 
 
     @Override
