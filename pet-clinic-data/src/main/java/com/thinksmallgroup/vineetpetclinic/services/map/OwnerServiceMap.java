@@ -2,9 +2,11 @@ package com.thinksmallgroup.vineetpetclinic.services.map;
 
 import com.thinksmallgroup.vineetpetclinic.model.Owner;
 import com.thinksmallgroup.vineetpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>
         implements OwnerService {
 

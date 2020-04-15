@@ -5,9 +5,6 @@ import com.thinksmallgroup.vineetpetclinic.model.Vet;
 import com.thinksmallgroup.vineetpetclinic.services.OwnerService;
 import com.thinksmallgroup.vineetpetclinic.services.PetService;
 import com.thinksmallgroup.vineetpetclinic.services.VetService;
-import com.thinksmallgroup.vineetpetclinic.services.map.OwnerServiceMap;
-import com.thinksmallgroup.vineetpetclinic.services.map.PetServiceMap;
-import com.thinksmallgroup.vineetpetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -19,10 +16,11 @@ public class DataLoader implements CommandLineRunner {
     private final PetService petService;
 
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
-        petService = new PetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService, PetService petService) {
+
+        this.ownerService = ownerService;
+        this.vetService = vetService;
+        this.petService = petService;
     }
 
     /**

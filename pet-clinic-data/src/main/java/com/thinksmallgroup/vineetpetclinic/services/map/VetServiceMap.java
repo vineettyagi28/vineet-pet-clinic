@@ -2,9 +2,11 @@ package com.thinksmallgroup.vineetpetclinic.services.map;
 
 import com.thinksmallgroup.vineetpetclinic.model.Vet;
 import com.thinksmallgroup.vineetpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long>
         implements VetService {
 
